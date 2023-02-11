@@ -1,0 +1,97 @@
+// Place all the styles related to the hello controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+      Meiryo, "MS Pゴシック", sans-serif;
+    background-color: rgb(250, 249, 230);
+  }
+  
+  header {
+    position: absolute;
+    width: 1500px;
+    height: 169px;
+    left: 0px;
+    top: 0px;
+    
+    background: #87D53A;
+  }
+  
+  header h1 {
+    position: absolute;
+    width: 288px;
+    height: 70px;
+    left: 532px;
+    top: 49px;
+    
+    font-family: 'Hachi Maru Pop';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+  }
+
+  
+  .main {
+    display: flex;
+  }
+  
+  .main-content {
+    position: absolute;
+    width: 294px;
+    height: 77px;
+    left: 564px;
+    top: 592px;
+    
+    background: #CFEB34;
+  }
+  
+  .main-text {
+    position: absolute;
+    width: 1245px;
+    height: 145px;
+    left: 109px;
+    top: 287px;
+    
+    font-family: 'Imbue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;    
+  }
+  
+  footer {
+    position: absolute;
+    width: 1440px;
+    height: 29px;
+    left: 0px;
+    top: 995px;
+
+    background: #956039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(243, 239, 188);
+    font-size: 15px;
+    color: rgb(31, 30, 25);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

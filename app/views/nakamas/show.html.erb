@@ -1,0 +1,56 @@
+<div class="intoro">
+<h2>頭をきたえるクイズ</h2>
+</div>
+<div class="tweet-container">
+<div class="tweet">
+    <% if @nakama.question == "正解" %>
+    <h1>正解</h1>
+    <p>やったね正解! 次の問題に挑戦してみよう！</p>
+
+    <% elsif @nakama.question == "不正解1" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解2" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解3" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解4" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解5" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解6" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解7" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解8" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解9" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+    <% elsif @nakama.question == "不正解10" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+
+
+    <% end %>
+
+    <%= link_to "戻る", :controller => "nakamas", :action => "new" %>
+    <%= link_to "マイページへ", user_path(current_user.id) %>
+
+</div>

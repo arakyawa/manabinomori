@@ -1,0 +1,75 @@
+<div class="intoro">
+<h2>キーボード・タイピング</h2>
+</div>
+<div class="tweet-container">
+<div class="tweet">
+    <% if @key.question == "正解" %>
+    <h1>正解</h1>
+    <p>やったね正解! 次の問題に挑戦してみよう!</p>
+
+    <% elsif @key.question == "不正解1" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て確認してみよう!</p>
+    
+    <% elsif @key.question == "不正解2" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て確認してみよう!</p>
+
+    <% elsif @key.question == "不正解3" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て確認してみよう!</p>
+    
+    <% elsif @key.question == "不正解4" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て確認してみよう!</p>
+
+    <% elsif @key.question == "不正解5" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て確認してみよう!</p>
+
+    <% elsif @key.question == "不正解6" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て打ち方を確認してみよう!</p>
+    <p>動画からローマ字を確認してみよう。</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ClH8Mkddqlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @key.question == "不正解7" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て打ち方を確認してみよう!</p>
+    <p>動画からローマ字を確認してみよう。</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ClH8Mkddqlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @key.question == "不正解8" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て打ち方を確認してみよう!</p>
+    <p>動画からローマ字を確認してみよう。</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ClH8Mkddqlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @key.question == "不正解9" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て打ち方を確認してみよう!</p>
+    <p>動画からローマ字を確認してみよう。</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ClH8Mkddqlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @key.question == "不正解10" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>一回、キーボードを見て打ち方を確認してみよう!</p>
+    <p>動画からローマ字を確認してみよう。</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ClH8Mkddqlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% end %>
+
+    <%= link_to "戻る", :controller => "keys", :action => "new" %>
+    <%= link_to "マイページへ", user_path(current_user.id) %>
+
+</div>

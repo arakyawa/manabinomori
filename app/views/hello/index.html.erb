@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>デザインゼミ</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  </head>
+
+ <body>
+   <header class="header-content">
+     <h1 class="header-title">まなびのもり</h1>
+   </header>
+
+    <main>
+      <div class="main">
+        <div class="main-content">
+          <div class="main-text">
+            ここでは、クイズを通してあたまの体そうをすることができるよ<br />
+            大人になったらゲームを作成したいと考えている、<br />
+            パソコンを使う学習が苦手だと感じている人は<br />
+            さっそくやってみよう<br />
+          </div>
+ 
+         <%= link_to "とうろく", new_user_registration_path %>
+         <%= link_to "ログイン", user_session_path %>
+         <% if user_signed_in? %>
+           <%= link_to "マイページへ", user_path(current_user.id) %>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <small>© 2021/11/09 Design Seminar</small>
+    </footer>
+  </body>
+</html>
+<% end %>

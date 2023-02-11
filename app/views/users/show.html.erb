@@ -1,0 +1,15 @@
+<h1><%= @user.name %>のへや</h1>
+<p>プロフィール : <%= @user.profile %></p>
+
+<h2>どのクイズをやるか選んでね</h2>
+<%= link_to "数字・計算", :controller => "calculations", :action => "new" %>
+<%= link_to "キーボード・タイピング", :controller => "keys", :action => "new" %>
+<%= link_to "頭をきたえるクイズ", :controller => "nazos", :action => "new" %>
+<%= link_to "なかまはずれ", :controller => "nakamas", :action => "new" %>
+<%= link_to "道順", :controller => "roads", :action => "new" %>
+
+<% if current_user.id == @user.id %>
+  <%= link_to "マイページのへんしゅうする", edit_user_registration_path %>
+<% end %>
+
+<%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>

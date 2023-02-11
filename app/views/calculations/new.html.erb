@@ -1,0 +1,213 @@
+<!DOCTYPE html> <!--  この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+    <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+        <meta charset="utf-8">
+        <title>香水診断スタート</title><!--ブラウザのタブのタイトルを指定-->
+    </head>
+
+    <body>
+        <header>
+            <h1 class="headline">
+            <a>数字・計算</a>
+            </h1>
+            <h4>ここでは数字に慣れるために計算問題にチャレンジしよう！</h4>
+        </header>
+    </body>
+
+<%= form_for(@calculation, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <p>問題1 次の四角に入る数字を選択してね。▢+4=13</p>
+            </div>
+            
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">9</label>
+            <%= f.radio_button :question, :不正解1 %>
+            <label class="form_item_label" for="user_favorite_food_id">8</label>
+            <%= f.radio_button :question, :不正解1 %>
+            <label class="form_item_label" for="user_favorite_food_id">7</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p>問題2 次の四角に入る数字を選択してね。49-▢=29</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">15</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">20</label>
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">25</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p>問題3 次の四角に入る数字を選択してね。8×7=▢</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解3 %>
+            <label class="form_item_label" for="user_favorite_food_id">49</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">56</label>
+            <%= f.radio_button :question, :不正解3 %>
+            <label class="form_item_label" for="user_favorite_food_id">54</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p>問題4 次の四角に入る数字を選択してね。▢÷7=50･･･2</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">352</label>
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">355</label>
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">350</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p>問題5 次の四角に入る数字を選択してね。</p>
+                <p>64×86=55▢4</p>
+
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">9</label>
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">1</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">0</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p>問題6 次の四角に入る数字を選択してね。3654÷9=▢</p>
+            </div>
+
+         <div class="form_item">
+         <%= f.radio_button :question, :正解 %>
+         <label class="form_item_label" for="user_favorite_food_id">406</label>
+         <%= f.radio_button :question, :不正解6 %>
+         <label class="form_item_label" for="user_favorite_food_id">3106</label>
+         <%= f.radio_button :question, :不正解6 %>
+         <label class="form_item_label" for="user_favorite_food_id">46</label>
+         </div>
+
+        <div class="sindanbotan">
+        <%= f.submit "決定" %>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-12">
+        <p>問題7 次の四角に入る数字を選択してね。6分の2は▢分の1と同じ</p>
+    </div>
+
+    <div class="form_item">
+    <%= f.radio_button :question, :不正解7 %>
+    <label class="form_item_label" for="user_favorite_food_id">2</label>
+    <%= f.radio_button :question, :正解 %>
+    <label class="form_item_label" for="user_favorite_food_id">3</label>
+    <%= f.radio_button :question, :不正解7 %>
+    <label class="form_item_label" for="user_favorite_food_id">4</label>
+    </div>
+
+    <div class="sindanbotan">
+    <%= f.submit "決定" %>
+    </div>
+
+    <div class="row">
+    <div class="col-12">
+        <p>問題8 次の四角に入る数字を選択してね。12×(153-149)-273÷(9+4)=▢</p>
+    </div>
+
+    <div class="form_item">
+    <%= f.radio_button :question, :不正解8 %>
+    <label class="form_item_label" for="user_favorite_food_id">16</label>
+    <%= f.radio_button :question, :正解 %>
+    <label class="form_item_label" for="user_favorite_food_id">27</label>
+    <%= f.radio_button :question, :不正解8 %>
+    <label class="form_item_label" for="user_favorite_food_id">0</label>
+    </div>
+
+    <div class="sindanbotan">
+    <%= f.submit "決定" %>
+    </div>
+
+    <div class="row">
+    <div class="col-12">
+        <p>問題9 次の四角に入る数字を選択してね
+        <p>5→7, 6→9, 7→13, 8→▢, 9→9</p>
+    </div>
+
+    <div class="form_item">
+    <%= f.radio_button :question, :正解 %>
+    <label class="form_item_label" for="user_favorite_food_id">10</label>
+    <%= f.radio_button :question, :不正解9 %>
+    <label class="form_item_label" for="user_favorite_food_id">12</label>
+    <%= f.radio_button :question, :不正解9 %>
+    <label class="form_item_label" for="user_favorite_food_id">19</label>
+    </div>
+
+    <div class="sindanbotan">
+    <%= f.submit "決定" %>
+    </div>
+
+    <div class="row">
+    <div class="col-12">
+        <p>問題10 次の四角に入る数字を選択してね。15→21→24→30→33→39→51→▢</p>
+    </div>
+
+    <div class="form_item">
+    <%= f.radio_button :question, :不正解10 %>
+    <label class="form_item_label" for="user_favorite_food_id">56</label>
+    <%= f.radio_button :question, :正解 %>
+    <label class="form_item_label" for="user_favorite_food_id">57</label>
+    <%= f.radio_button :question, :不正解10 %>
+    <label class="form_item_label" for="user_favorite_food_id">58</label>
+    </div>
+
+    <div class="sindanbotan">
+    <%= f.submit "決定" %>
+    </div>
+
+</div>
+
+    </div>
+
+    <%= link_to "マイページへ", user_path(current_user.id) %>
+<% end %>

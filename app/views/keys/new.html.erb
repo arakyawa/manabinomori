@@ -1,0 +1,198 @@
+<!DOCTYPE html> <!--  この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+    <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+        <meta charset="utf-8">
+        <title>香水診断スタート</title><!--ブラウザのタブのタイトルを指定-->
+    </head>
+
+    <body>
+        <header>
+            <h1 class="headline">
+            <a>キーボード・タイピング</a>
+            </h1>
+            <h4>ここではキーボードに慣れるためにクイズにチャレンジしよう！</h4>
+        </header>
+    </body>
+
+<%= form_for(@key, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <p>問題1. 下の画像の▢に入るアルファベットを選択してね</p>
+            <%= image_tag 'key.1.jpeg' %>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解1 %>
+            <label class="form_item_label" for="user_favorite_food_id">A</label>
+            <%= f.radio_button :question, :不正解1 %>
+            <label class="form_item_label" for="user_favorite_food_id">D</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">S</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題2. 下の画像の▢に入るアルファベットを選択してね</p>
+            <%= image_tag 'key.2.jpeg' %>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">F</label>
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">P</label>
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">G</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題3. 下の画像の▢に入るアルファベットを選択してね</p>
+            <%= image_tag 'key.3.jpeg' %>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">L</label>
+            <%= f.radio_button :question, :不正解3 %>
+            <label class="form_item_label" for="user_favorite_food_id">M</label>
+            <%= f.radio_button :question, :不正解3 %>
+            <label class="form_item_label" for="user_favorite_food_id">K</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題4. 下の画像の▢に入るアルファベットを選択してね</p>
+            <%= image_tag 'key.4.jpeg' %>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">C</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">B</label>
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">V</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題5. 下の画像の▢に入るアルファベットを選択してね</p>
+             <%= image_tag 'key.5.jpeg' %>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">K</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">J</label>
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">H</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題6. <ネコ>ってどうやって打つのかな</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解6 %>
+            <label class="form_item_label" for="user_favorite_food_id">NEKI</label>
+            <%= f.radio_button :question, :不正解6 %>
+            <label class="form_item_label" for="user_favorite_food_id">NEMUI</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">NEKO</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題7. <常温>ってどうやって打つのかな</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解7 %>
+            <label class="form_item_label" for="user_favorite_food_id">dyouonn</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">zyouonn</label>
+            <%= f.radio_button :question, :不正解7 %>
+            <label class="form_item_label" for="user_favorite_food_id">zyouon</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題8. <ディスク>ってどうやって打つのかな</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">dhisuku</label>
+            <%= f.radio_button :question, :不正解8 %>
+            <label class="form_item_label" for="user_favorite_food_id">disuku</label>
+            <%= f.radio_button :question, :不正解8 %>
+            <label class="form_item_label" for="user_favorite_food_id">dhesuku</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題9. <すもももももももものうち>ってどうやって打つのかな</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">sumomomomomomomomomouti</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">sumomomomomomomomonouti</label>
+            <%= f.radio_button :question, :不正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">sumomomomomomomomomonouti</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題10. <ずいずいずっころばし>ってどうやって打つのかな</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">zuizuizukkorobashi</label>
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">zuizuizukkorobaji</label>
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">zuizuizukorobasi</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+        </div>
+    </div>
+    <%= link_to "マイページへ", user_path(current_user.id) %>
+<% end %>

@@ -1,0 +1,265 @@
+<!DOCTYPE html> <!--  この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+    <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+        <meta charset="utf-8">
+        <title>香水診断スタート</title><!--ブラウザのタブのタイトルを指定-->
+    </head>
+
+    <body>
+        <header>
+            <h1 class="headline">
+            <a>頭をきたえるクイズ</a>
+            </h1>
+            <h4>ここでは頭を使うクイズを解くとこができるよ。文章をよく読んで問題にチャレンジしてみよう！</h4>
+            <h6>参考:<%= link_to "https://sist8.com/dollar" %></h6>
+        </header>
+    </body>
+
+<%= form_for(@nazo, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <p>問題1</p>
+                <p>ここは、ある村の話です。</p>
+                <p>1人の小学生の前に3人村人がいます。</p>
+                <p>1人は天使、1人はあくま、1人は人間です。</p>
+                <p>天使は常に真実を言い、あくまは常に嘘をつき、人間はうそをついたりつかなかったりします。</p>
+                <p>3人の村人(A,B,C)は次のように言っています。</p>
+                <p>A「私は天使ではないです」</p>
+                <p>B「私はあくまではないです」</p>
+                <p>C「私は人間ではないです」</p>
+                <p>Aは天使・あくま・村人のうち何者でしょう？</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解1 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解1 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+                <p>問題2</p>
+                <p>ボールペンと消しゴムの値段は合わせて110円。</p>
+                <p>ボールペンは消しゴムより100円高い。</p>
+                <p>では、消しゴムの値段は?</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">5</label>
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">10</label>
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">15</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題3</p>
+            <p>AくんとBくんが100メートルでかけっこをします。</p>
+            <p>1回目のかけっこではAくんが勝利しました。</p>
+            <p>Aくんがゴールした時、Bくんは90メートルの所を走っていました。</p>
+            <p>そこで2回目のかけっこでは、Aくんがスタート地点より10メートル下がったところからスタートしました。</p>
+            <p>さて、2回目に勝ったのはAくんとBくんのどちらでしょうか?</p>
+            <p>ただし、2人はそれぞれ常に一定の速度で走るよ</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">Aくん</label>
+            <%= f.radio_button :question, :不正解3 %>
+            <label class="form_item_label" for="user_favorite_food_id">引き分け</label>
+            <%= f.radio_button :question, :不正解3 %>
+            <label class="form_item_label" for="user_favorite_food_id">Bくん</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題4</p>
+            <p>ある女の子は深さ30メートルの井戸に落ちてしまいました。</p>
+            <p>彼女は1時間ごとに3メートル登りますが、その直後に2メートルずり落ちてしまいます。</p>
+            <p>女の子が井戸から脱出するには何時間かかる？</p>
+            
+            </p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">30</label>
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">29</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">28</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題5</p>
+            <p>歩いて横断するのに6日かかる砂漠があります。</p>
+            <p>1人の男性はこの砂漠の横断に挑戦します。</p>
+            <p>彼はスタート時に荷物持ち(=荷物を持ってくれる人)を連れて砂漠に行きます。</p>
+            <p>1人が持てる食料は最大4日分。</p>
+            <p>彼は何人の荷物持ちを連れて行けばよいでしょうか。</p>
+            <p>なお、1人1日必ずご飯を食べないと、砂漠の中でそう難してしまいます。</p>
+            <p>そう難者が出ないようにしましょう。</p>
+            <p>また、男性が持てる食料も最大4日分です。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">1</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">2</label>
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">4</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題6 </p>
+            <p>おととい、Aちゃんは5歳だった。</p>
+            <p>来年の誕生日には8歳になるそうだよ。</p>
+            <p>さて、Aちゃんの誕生日はいつでしょう?</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">12月31日</label>
+            <%= f.radio_button :question, :不正解6 %>
+            <label class="form_item_label" for="user_favorite_food_id">1月1日</label>
+            <%= f.radio_button :question, :不正解6 %>
+            <label class="form_item_label" for="user_favorite_food_id">1月2日</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題7</p>
+            <p>A子とB子がじゃんけんで10回勝負をしました。</p>
+            <p>A子は グー:3回, チョキ:6回, パー:1回出し、</p>
+            <p>B子は グー:2回, チョキ:6回, パー:1回出しました。</p>
+            <p>あいこには一度もなりませんでした。</p>
+            <p>2人が何の手をどの順番で出したかは分からない。</p>
+            <p>さて、勝ったのはどちらの女の子でしょう。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解7 %>
+            <label class="form_item_label" for="user_favorite_food_id">引き分け</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">A子</label>
+            <%= f.radio_button :question, :不正解7 %>
+            <label class="form_item_label" for="user_favorite_food_id">B子</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題8</p>
+            <p>きれい好きなA子はせいけつなシャツを毎日着るために、</p>
+            <p>1日ごとにきれいなシャツに着替えます。</p>
+            <p>洗たくがめんどうくさいので、A子は毎週日曜日にクリーニング店へ行って</p>
+            <p>今週1週間分のシャツをクリーニングに出し、先週出しておいた分のシャツをすべて受け取ります。</p>
+            <p>さて、A子は最低何枚のシャツを持っていけば1週間のサイクルでシャツを着まわし続けられるでしょうか?</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">15</label>
+            <%= f.radio_button :question, :不正解8 %>
+            <label class="form_item_label" for="user_favorite_food_id">14</label>
+            <%= f.radio_button :question, :不正解8 %>
+            <label class="form_item_label" for="user_favorite_food_id">7</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題9</p>
+            <p>目の前に川があります。</p>
+            <p>川のこちら側にはボートが４つあります。</p>
+            <p>ボートは川を渡るのにそれぞれ1分,2分,4分,8分かかる。</p>
+            <p>向こう岸にすべてのボートを集めるには、最短で何分かかるでしょう?</p>
+            <p>ただし、一度に動かせるボートは2つまでです。</p>
+            <p>また、2つのボートを同時に動かして川を渡ろうとした場合、</p>
+            <p>おそい方のボートが川を渡る時間分かかるものとします。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">17</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">15</label>
+            <%= f.radio_button :question, :不正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">16</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題10 </p>
+            <p>1.この中にうその文章が少なくとも1つある</p>
+            <p>2.この中にうその文章が少なくとも2つある</p>
+            <p>3.この中にうその文章が少なくとも3つある</p>
+            <p>4.この中にうその文章が少なくとも4つある</p>
+            <p>5.この中にうその文章が少なくとも5つある</p>
+            <p>6.この中にうその文章が少なくとも6つある</p>
+            <p>7.この中にうその文章が少なくとも7つある</p>
+            <p>8.この中にうその文章が少なくとも8つある</p>
+            <p>9.この中にうその文章が少なくとも9つある</p>
+            <p>10.この中にうその文章が少なくとも10ある</p>
+            <p>もしうその文章があるとするなら、うその文章はどれでしょう?</p>
+            
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">1,2,3,4,5</label>
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">10</label>
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">7,8,9</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">6,7,8,9,10</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+        </div>
+    </div>
+            
+<h3>頭をきたえるを最後まで解いてくれてありがとう！</h3>
+<h3>頭をたくさん使ったから、つかれたね~</h3>
+<h3>お休みしたら、マイページに行って他の問題にも挑戦してみてね</h3>
+
+<%= link_to "マイページへ", user_path(current_user.id) %>
+<% end %>

@@ -1,0 +1,2 @@
+class Nazo < ApplicationRecord
+end

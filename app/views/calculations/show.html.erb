@@ -1,0 +1,113 @@
+<div class="intoro">
+<h2>数字・計算</h2>
+</div>
+<div class="tweet-container">
+<div class="tweet">
+    <% if @calculation.question == "正解" %>
+    <h1>正解</h1>
+    <p>やったね正解! 次の問題に挑戦してみよう！</p>
+
+    <% elsif @calculation.question == "不正解1" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、落ち着いて計算してみよう！</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/m5zWD0b6Qtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @calculation.question == "不正解2" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、落ち着いて計算してみよう！</p>
+    <p>今回はくり下がりのある引き算じゃなかったけど、まだくり下がりのある引き算がマスターできていない人は動画を見てみよう!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zk6a-jiXt8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @calculation.question == "不正解3" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、落ち着いて計算してみよう！</p>
+    <p>もし、まだかけ算を完全におぼえられてない場合は、下の動画を見て一緒に歌って楽しく覚えよう</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B8R_C2_HDnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @calculation.question == "不正解4" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、落ち着いて計算してみよう！</p>
+    <p>わり算がまだよく分からない子は動画を見てみよう!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GG_arM5BzZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @calculation.question == "不正解5" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、落ち着いて計算してみよう！</p>
+    <p>筆算を使ったかけ算に自信のない子は動画を見てみよう!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/64XEIQsI7NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @calculation.question == "不正解6" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、落ち着いて計算してみよう！</p>
+    <p>筆算を使ったわり算に自信のない子は動画を見てみよう!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3gKRjg14ee4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @calculation.question == "不正解7" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、落ち着いて計算してみよう！</p>
+    <p>分数の約分はもう覚えたかな?わり算が大事になるから、ふく習してみてね。</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Re8cpxWGvz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @calculation.question == "不正解8" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、落ち着いて計算してみよう！</p>
+    <p>計算のきまりが大事になるよ!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rT7Xx9jbpck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <% elsif @calculation.question == "不正解9" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、考えてみよう！</p>
+    <p>数の法則性を見つけよう！足し算・引き算だけじゃなくて、かけ算・割り算も使って解いてみよう！</p>
+    <p>考えたけど、分からなかったら解説を見てみてね</p>
+
+    <p>解説</p>
+    <p>まずは、数字の法則性を見つけます。</p>
+    <p>5→7,6→9,7→13,8→▢,9→9 </p>
+    <p>問題を見てみると、矢印の左にある数が増えるごとに右にある数が必ず増えているわけではないことが分かります。</p>
+    <p>単じゅんに矢印の左の数が増えるごとに、右の数を足し算・引き算するだけじゃ解けなそうだね。</p>
+    <p>ここで、考え方を変えてみます。</p>
+    <p>矢印の左にある数が問題を解くカギになると考えてみよう。</p>
+    <p>まず5から考えていきましょう。5だけを使ってできる計算はなんだろう?</p>
+    <p>5だけで足し算・引き算をするとそれぞれ、10,0となり答えが違うことが分かります。</p>
+    <p>それではかけ算はどうでしょうか?</p>
+    <p>5×5=25、これだけでは答えにたどり着けません。</p>
+    <p>25はどのようにしたら7になるのでしょう。</p>
+    <p>ここで、足し算を使います。2+5=「7」になりましたね。</p>
+    <p>そうすると、▢は8×8=64,6+4=「10」</p>
+
+    <% elsif @calculation.question == "不正解10" %>
+    <h1>不正解</h1>
+    <p>ざんねん！</p>
+    <p>もう一度、考えてみよう！</p>
+    <p>同じ数ずつ増えていないことがポイントだよ。</p>
+    <p>考えたけど、分からなかったら解説を見てみてね。</p>
+
+    <p>解説</p>
+    <p>まずは、どのように増えているのかを確認してみよう!</p>
+    <p>15→21→24→30→33→39→51→▢</p>
+    <p>問題から、6→3→6→3→6→12→?のように増えていることが分かります。</p>
+    <p>最初は6→3のように増え続けているけど、</p>
+    <p>39から51に増える時、12増えているね。</p>
+    <p>そのため、法則的に数が増えているわけじゃないことが分かるね。</p>
+    <p>そしたら、それぞれどのように増えているかもう一度確認してみよう。</p>
+    <p>15から21になる時、6増えているけど、どうして6増えているのかな?</p>
+    <p>15という数字に着目すると、各位を足し算すると6になるね。</p>
+    <p>他の数字も見てみると、21の各位を足すと3、24の各位を足すと6、30の各位を足すと・・・</p>
+    <p>ここで、各位を足すと6→3→6→3→6→12→6になることが分かったね。</p>
+    <p>つまり▢は51から6増えた「57」になることが分かりました。</p>
+
+    <% end %>
+
+    <%= link_to "戻る", :controller => "calculations", :action => "new" %>
+    <%= link_to "マイページへ", user_path(current_user.id) %>
+
+</div>

@@ -1,0 +1,231 @@
+<!DOCTYPE html> <!--  この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+    <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+        <meta charset="utf-8">
+        <title>香水診断スタート</title><!--ブラウザのタブのタイトルを指定-->
+    </head>
+
+    <body>
+        <header>
+            <h1 class="headline">
+            <a>道順</a>
+            </h1>
+            <h4>ここでは、正しい道順を見つけて花をさかせよう！</h4>
+            <h4>ただし、すべての▢を通らないといけません。</h4>
+            <h4>ななめには進めないよ。</h4>
+        </header>
+    </body>
+
+<%= form_for(@road, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <p>問題1</p>
+                <p>スタートからじょうろを持って花をさかせるよ。</p>
+                <p>スタートからどの方向にいけば、花をさかせてゴールに着けるかな?</p>
+                <p>同じ道は1回しか通れないよ。</p>
+                <%= image_tag 'road1.jpeg' %>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解1 %>
+            <label class="form_item_label" for="user_favorite_food_id">→</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">↓</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+               <p>問題2</p>
+               <p>スタートからじょうろを持って花をさかせるよ。</p>
+               <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+               <p>同じ道は1回しか通れないよ。</p>
+               <%= image_tag 'road2.jpeg' %>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">←</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">↑</label>
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">↓</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題3</p>
+            <p>スタートからじょうろを持って花をさかせるよ。</p>
+            <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+            <p>同じ道は1回しか通れないよ。</p>
+            <%= image_tag 'road3.jpeg' %>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解3 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解3 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題4</p>
+            <p>スタートからじょうろを持って花をさかせるよ。</p>
+            <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+            <p>同じ道は1回しか通れないよ。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題5</p>
+            <p>スタートからじょうろを持って花をさかせるよ。</p>
+            <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+            <p>同じ道は1回しか通れないよ。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題6</p>
+            <p>スタートからじょうろを持って花をさかせるよ。</p>
+            <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+            <p>同じ道は1回しか通れないよ。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解6 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解6 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題7</p>
+            <p>スタートからじょうろを持って花をさかせるよ。</p>
+            <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+            <p>同じ道は1回しか通れないよ。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解7 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解7 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題8</p>
+            <p>スタートからじょうろを持って花をさかせるよ。</p>
+            <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+            <p>同じ道は1回しか通れないよ。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解8 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解8 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題9</p>
+            <p>スタートからじょうろを持って花をさかせるよ。</p>
+            <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+            <p>同じ道は1回しか通れないよ。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+            <div class="sindanbotan">
+            <%= f.submit "決定" %>
+            </div>
+
+            <div class="col-12">
+            <p>問題10</p>
+            <p>スタートからじょうろを持って花をさかせるよ。</p>
+            <p>どの方向にいけば、花をさかせてゴールに着けるかな?</p>
+            <p>同じ道は1回しか通れないよ。</p>
+            </div>
+
+            <div class="form_item">
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            </div>
+
+        <div class="sindanbotan">
+        <%= f.submit "決定" %>
+        </div>
+
+        </div>
+    </div>
+
+<h3>道順クイズを最後まで解いてくれてありがとう！</h3>
+<h3>すべてのお花をさかせられたかな?</h3>
+<h3>お休みしたら、マイページに行って他の問題にも挑戦してみてね</h3>
+
+<%= link_to "マイページへ", user_path(current_user.id) %>
+<% end %>
