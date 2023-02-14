@@ -11,6 +11,8 @@
             <a>なかまはずれ</a>
             </h1>
             <h4>ここでは、なかまはずれを見つけるクイズにチャレンジできるよ！</h4>
+            <h4>１つだけ種るいがちがうものがあるから見つけてね。</4>
+            <h6>参考:<%= link_to '幼女の論理クイズ', "https://sist8.com/category/logical" %></h6>
         </header>
     </body>
 
@@ -19,17 +21,18 @@
         <div class="row">
             <div class="col-12">
                 <p>問題1</p>
-                <p>なかまはずれはどれでしょう？</p>
-                <p>なかまはずれを1つだけ見つけてね</p>
+                <p>なかまはずれは左から何番目の図形でしょう？</p>
+                <p>画像の中から、なかまはずれを1つだけ見つけてね</p>
+                <img src='<%= asset_path('nakama1.jpeg') %>'/>
             </div>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解1 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">1番目</label>
             <%= f.radio_button :question, :不正解1 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <label class="form_item_label" for="user_favorite_food_id">2番目</label>
             <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">3番目</label>
             </div>
 
             <div class="sindanbotan">
@@ -38,17 +41,18 @@
 
             <div class="col-12">
             <p>問題2</p>
-            <p>なかまはずれはどれでしょう？</p>
+            <p>なかまはずれは左から何番目の図形でしょう？</p>
             <p>なかまはずれを1つだけ見つけてね</p>
+            <img src='<%= asset_path ('nakama2.jpeg') %>'/>
             </div>
 
             <div class="form_item">
-            <%= f.radio_button :question, :不正解2 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
-            <%= f.radio_button :question, :不正解2 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
             <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">1番目</label>
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">2番目</label>
+            <%= f.radio_button :question, :不正解2 %>
+            <label class="form_item_label" for="user_favorite_food_id">3番目</label>
             </div>
 
             <div class="sindanbotan">
@@ -190,17 +194,22 @@
 
             <div class="col-12">
             <p>問題10</p>
-            <p>なかまはずれはどれでしょう？</p>
+            <p>なかまはずれは左から何番目の図形でしょう？</p>
             <p>なかまはずれを1つだけ見つけてね</p>
+            <%= image_tag 'nakama10.jpeg' %>
             </div>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解10 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">1番目</label>
             <%= f.radio_button :question, :不正解10 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <label class="form_item_label" for="user_favorite_food_id">2番目</label>
             <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">3番目</label>
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">4番目</label>
+            <%= f.radio_button :question, :不正解10 %>
+            <label class="form_item_label" for="user_favorite_food_id">5番目</label>
             </div>
 
             <div class="sindanbotan">
