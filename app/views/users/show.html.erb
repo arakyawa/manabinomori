@@ -4,9 +4,9 @@
 <h2>どのクイズをやるか選んでね</h2>
 <%= link_to "数字・計算", :controller => "calculations", :action => "new" %>
 <%= link_to "キーボード・タイピング", :controller => "keys", :action => "new" %>
-<%= link_to "頭をきたえるクイズ", :controller => "nazos", :action => "new" %>
 <%= link_to "なかまはずれ", :controller => "nakamas", :action => "new" %>
 <%= link_to "道順", :controller => "roads", :action => "new" %>
+<%= link_to "頭をきたえるクイズ", :controller => "nazos", :action => "new" %>
 
 <% if current_user.id == @user.id %>
   <%= link_to "マイページのへんしゅうする", edit_user_registration_path %>

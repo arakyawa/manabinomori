@@ -40,10 +40,10 @@
             </div>
 
             <div class="col-12">
-            <p>問題2</p>
-            <p>なかまはずれは左から何番目の図形でしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
-            <img src="<%= asset_path ('nakama2.jpeg') %>"/>
+                <p>問題2</p>
+                <p>なかまはずれは左から何番目の図形でしょう？</p>
+                <p>なかまはずれを1つだけ見つけてね</p>
+                <img src="<%= asset_path ('nakama2.jpeg') %>"/>
             </div>
 
             <div class="form_item">
@@ -60,18 +60,19 @@
             </div>
 
             <div class="col-12">
-            <p>問題3</p>
-            <p>なかまはずれはどれでしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
+                <p>問題3</p>
+                <p>なかまはずれは左から何番目の図形でしょう？</p>
+                <p>なかまはずれを1つだけ見つけてね</p>
+                <img src="<%= asset_path ('nakama3.jpeg') %>"/>
             </div>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解3 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">1番目</label>
+            <%= f.radio_button :question, :正解 %>
+            <label class="form_item_label" for="user_favorite_food_id">2番目</label>
             <%= f.radio_button :question, :不正解3 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
-            <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">3番目</label>
             </div>
 
             <div class="sindanbotan">
@@ -79,18 +80,23 @@
             </div>
 
             <div class="col-12">
-            <p>問題4</p>
-            <p>なかまはずれはどれでしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
+                <p>問題4</p>
+                <p>なかまはずれはどれでしょう？</p>
+                <p>なかまはずれを1つだけ見つけてね</p>
+                <img src="<%= asset_path ('nakama4.jpeg') %>"/>
             </div>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解4 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">1番目</label>
             <%= f.radio_button :question, :不正解4 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
+            <label class="form_item_label" for="user_favorite_food_id">2番目</label>
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">3番目</label>
+            <%= f.radio_button :question, :不正解4 %>
+            <label class="form_item_label" for="user_favorite_food_id">4番目</label>
             <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">5番目</label>
             </div>
 
             <div class="sindanbotan">
@@ -98,18 +104,21 @@
             </div>
 
             <div class="col-12">
-            <p>問題5</p>
-            <p>なかまはずれはどれでしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
+                <p>問題5</p>
+                <p>なかまはずれはどれでしょう？</p>
+                <p>なかまはずれを1つだけ見つけてね</p>
+                <p>バスケットボール, はい球, レスリング, たっ球</p>
             </div>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解5 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">バスケットボール</label>
             <%= f.radio_button :question, :不正解5 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
-            <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">排球</label>
+            <%= f.radio_button :question, :正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">レスリング</label>
+            <%= f.radio_button :question, :不正解5 %>
+            <label class="form_item_label" for="user_favorite_food_id">卓球</label>
             </div>
 
             <div class="sindanbotan">
@@ -117,18 +126,21 @@
             </div>
 
             <div class="col-12">
-            <p>問題6</p>
-            <p>なかまはずれはどれでしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
+                <p>問題6</p>
+                <p>なかまはずれはどれでしょう？</p>
+                <p>なかまはずれを1つだけ見つけてね</p>
+                <p>ヒイラギ, ひまわり, ユリ, バラ</p>
             </div>
 
             <div class="form_item">
+            <%= f.radio_button :question, :正解6 %>
+            <label class="form_item_label" for="user_favorite_food_id">ヒイラギ</label>
             <%= f.radio_button :question, :不正解6 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">ひまわり</label>
             <%= f.radio_button :question, :不正解6 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
-            <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">ユリ</label>
+            <%= f.radio_button :question, :不正解6 %>
+            <label class="form_item_label" for="user_favorite_food_id">バラ</label>
             </div>
 
             <div class="sindanbotan">
@@ -136,18 +148,21 @@
             </div>
 
             <div class="col-12">
-            <p>問題7</p>
-            <p>なかまはずれはどれでしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
+                 <p>問題7</p>
+                 <p>なかまはずれはどれでしょう？</p>
+                 <p>なかまはずれを1つだけ見つけてね</p>
+                 <p>自動車, 飛行機, トラッカー, バス</p>
             </div>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解7 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">自動車</label>
+            <%= f.radio_button :question, :正解7 %>
+            <label class="form_item_label" for="user_favorite_food_id">飛行機</label>
             <%= f.radio_button :question, :不正解7 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
-            <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">トラッカー</label>
+            <%= f.radio_button :question, :不正解7 %>
+            <label class="form_item_label" for="user_favorite_food_id">バス</label>
             </div>
 
             <div class="sindanbotan">
@@ -155,18 +170,22 @@
             </div>
 
             <div class="col-12">
-            <p>問題8</p>
-            <p>なかまはずれはどれでしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
+                <p>問題8</p>
+                <p>なかまはずれはどれでしょう？</p>
+                <p>なかまはずれを1つだけ見つけてね</p>
+                <p>東京ディズニーランド, 東京タワー, 東京駅, 東京六本木ヒルズ</p>
+                <p>ヒント：場所に注目してみよう！</p>
             </div>
 
             <div class="form_item">
+            <%= f.radio_button :question, :正解8 %>
+            <label class="form_item_label" for="user_favorite_food_id">東京ディズニーランド</label>
             <%= f.radio_button :question, :不正解8 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">東京タワー</label>
             <%= f.radio_button :question, :不正解8 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
-            <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">東京駅</label>
+            <%= f.radio_button :question, :不正解8 %>
+            <label class="form_item_label" for="user_favorite_food_id">東京六本木ヒルズ</label>
             </div>
 
             <div class="sindanbotan">
@@ -174,18 +193,24 @@
             </div>
 
             <div class="col-12">
-            <p>問題9</p>
-            <p>なかまはずれはどれでしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
+                <p>問題9</p>
+                <p>なかまはずれはどれでしょう？</p>
+                <p>なかまはずれを1つだけ見つけてね</p>
+                <p>たこやき, うどん, パンケーキ, おもち, クレープ</p>
+                <p>ヒント：材料に注目してみよう！</p>
             </div>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解9 %>
-            <label class="form_item_label" for="user_favorite_food_id">天使</label>
+            <label class="form_item_label" for="user_favorite_food_id">たこやき</label>
             <%= f.radio_button :question, :不正解9 %>
-            <label class="form_item_label" for="user_favorite_food_id">あくま</label>
-            <%= f.radio_button :question, :正解 %>
-            <label class="form_item_label" for="user_favorite_food_id">村人</label>
+            <label class="form_item_label" for="user_favorite_food_id">うどん</label>
+            <%= f.radio_button :question, :不正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">パンケーキ</label>
+            <%= f.radio_button :question, :正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">おもち</label>
+            <%= f.radio_button :question, :不正解9 %>
+            <label class="form_item_label" for="user_favorite_food_id">クレープ</label>
             </div>
 
             <div class="sindanbotan">
@@ -193,10 +218,11 @@
             </div>
 
             <div class="col-12">
-            <p>問題10</p>
-            <p>なかまはずれは左から何番目の図形でしょう？</p>
-            <p>なかまはずれを1つだけ見つけてね</p>
-            <img src="<%= image_tag 'nakama10.jpeg' %>"/>
+                <p>問題10</p>
+                <p>なかまはずれは左から何番目の図形でしょう？</p>
+                <p>なかまはずれを1つだけ見つけてね</p>
+                <p>ヒント：1つ1つ図形を整理してみよう！</p>
+                <img src="<%= asset_path('nakama10.jpeg') %>"/>
             </div>
 
             <div class="form_item">

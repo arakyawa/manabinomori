@@ -10,7 +10,7 @@ class KeysController < ApplicationController
   
     def create
       @key = Key.new(key_params)
-      params[:key][:question] ? @key.question = params[:key][:question].join("") : false
+      params[:key][:question] ? @key.question = params[:key][:question] : false
       if @key.save
           flash[:notice] = "診断が完了しました"
           redirect_to key_path(@key.id)

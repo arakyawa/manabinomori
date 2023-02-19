@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>デザインゼミ</title>
+    <title>まなびのもり</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
   </head>
 
@@ -13,25 +13,30 @@
 
     <main>
       <div class="main">
-        <div class="main-content">
-          <div class="main-text">
-            ここでは、クイズを通してあたまの体そうをすることができるよ<br />
-            大人になったらゲームを作成したいと考えている、<br />
-            パソコンを使う学習が苦手だと感じている人は<br />
-            さっそくやってみよう<br />
-          </div>
- 
-         <%= link_to "とうろく", new_user_registration_path %>
-         <%= link_to "ログイン", user_session_path %>
-         <% if user_signed_in? %>
-           <%= link_to "マイページへ", user_path(current_user.id) %>
+        <div class="main-text">
+        <p>ここでは、クイズを通してあたまの体そうをすることができるよ</br>
+        </br>
+        大人になったらゲームを作成したいと考えている、</br>
+        パソコンを使う学習が苦手だと感じている人は</br>
+        さっそくやってみよう</br></p>
         </div>
+
+       <div class="main-app">
+         <p>↓はじめてクイズをやる人は下をクリック↓</p>
+          <div class="main-content"> 
+           <%= link_to "とうろく", new_user_registration_path %>
+          </div>
+         <p>↓クイズをする人は下をクリック↓</p>
+          <div class="main-context">
+           <%= link_to "ログイン", user_session_path %>
+          </div>
+
+       </div>
       </div>
     </main>
 
     <footer>
-      <small>© 2021/11/09 Design Seminar</small>
+      <small>© 2023/2/21 manamori</small>
     </footer>
   </body>
 </html>
-<% end %>
