@@ -1,5 +1,11 @@
 <div class="intoro">
-<h2>頭をきたえるクイズ</h2>
+  <header>
+    <div class="header-text">
+      <div class="header-title">
+        <p>頭をきたえるクイズ</p>
+      </div>
+    </div>
+  </header>
 </div>
 <div class="tweet-container">
 <div class="tweet">
@@ -12,11 +18,12 @@
     <p>ざんねん！</p>
     <p>もう一度、落ち着いて考えてみよう</p>
     <p>考えぬいたけど、分からない人は解説を見てみよう！</p>
-
-    <p>答え</p>
+    </br>
+    </br>
+    <p><答え></p>
     <p>村人</p>
-
-    <p>解説</p>
+    </br>
+    <p><解説></p>
     <p>分かることから整理していこう！</p>
     <p>まず最初に確定できるのは「B:あくま」になります。</p>
     <p>あくまは常に嘘をつかなければならないため、</p>
@@ -221,7 +228,10 @@
 
     <% end %>
 
-    <%= link_to "戻る", :controller => "nazos", :action => "new" %>
+    <%= link_to "戻る", :controller => "nazos", :action => "new" %></br>
     <%= link_to "マイページへ", user_path(current_user.id) %>
 
 </div>
+<footer-1>
+  <small>© 2023/2/23 manamori</small>
+</footer-1>

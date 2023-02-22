@@ -7,19 +7,22 @@
 
     <body>
         <header>
-            <h1 class="headline">
-            <a>キーボード・タイピング</a>
-            </h1>
-            <h4>ここではキーボードに慣れるためにクイズにチャレンジしよう！</h4>
+          <div class="header-text">
+            <div class="header-title">
+              <p>キーボード・タイピング</p>
+            </div>
+          </div>
         </header>
+        
     </body>
+    <h3>ここではキーボードに慣れるためにクイズにチャレンジしよう！</h3></br>
 
 <%= form_for(@key, class: 'form-horizontal', role: 'form') do |f| %>
     <div class="container-sindan">
         <div class="row">
             <div class="col-12">
-                <p>問題1. 下の画像の▢に入るアルファベットを選択してね</p>
-                <img src="<%= asset_path('key.1.jpeg') %>"/>
+                <p><h4>問題1</h4> 下の画像の▢に入るアルファベットを選択してね</p>
+                <img src='<%= asset_path('key.1.jpeg') %>'width="50%"/>
             </div>
 
             <div class="form_item">
@@ -33,11 +36,11 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題2. 下の画像の▢に入るアルファベットを選択してね</p>
-                <img src="<%= asset_path('key.2.jpeg') %>"/>
+                <p><h4>問題2</h4> 下の画像の▢に入るアルファベットを選択してね</p>
+                <img src='<%= asset_path('key.2.jpeg') %>'width="50%"/>
             </div>
 
             <div class="form_item">
@@ -51,11 +54,11 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題3. 下の画像の▢に入るアルファベットを選択してね</p>
-                <img src="<%= asset_path('key.3.jpeg') %>"/>
+                <p><h4>問題3</h4> 下の画像の▢に入るアルファベットを選択してね</p>
+                <img src='<%= asset_path('key.3.jpeg') %>'width="50%"/>
             </div>
 
             <div class="form_item">
@@ -69,11 +72,11 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題4. 下の画像の▢に入るアルファベットを選択してね</p>
-                <img src="<%= asset_path('key.4.jpeg') %>"/>
+                <p><h4>問題4</h4> 下の画像の▢に入るアルファベットを選択してね</p>
+                <img src='<%= asset_path('key.4.jpeg') %>'width="50%"/>
             </div>
 
             <div class="form_item">
@@ -87,11 +90,11 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題5. 下の画像の▢に入るアルファベットを選択してね</p>
-                <img src="<%= asset_path('key.5.jpeg') %>"/>
+                <p><h4>問題5</h4> 下の画像の▢に入るアルファベットを選択してね</p>
+                <img src='<%= asset_path('key.5.jpeg') %>'width="50%"/>
             </div>
 
             <div class="form_item">
@@ -105,10 +108,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題6. <ネコ>ってどうやって打つのかな</p>
+                <p><h4>問題6</h4> <ネコ>ってどうやって打つのかな</p>
             </div>
 
             <div class="form_item">
@@ -122,10 +125,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題7. <常温>ってどうやって打つのかな</p>
+                <p><h4>問題7</h4> <常温>ってどうやって打つのかな</p>
             </div>
 
             <div class="form_item">
@@ -139,10 +142,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題8. <ディスク>ってどうやって打つのかな</p>
+                <p><h4>問題8</h4> <ディスク>ってどうやって打つのかな</p>
             </div>
 
             <div class="form_item">
@@ -156,10 +159,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題9. <すもももももももものうち>ってどうやって打つのかな</p>
+                <p><h4>問題9</h4> <すもももももももものうち>ってどうやって打つのかな</p>
             </div>
 
             <div class="form_item">
@@ -173,10 +176,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題10. <ずいずいずっころばし>ってどうやって打つのかな</p>
+                <p><h4>問題10</h4> <ずいずいずっころばし>ってどうやって打つのかな</p>
             </div>
 
             <div class="form_item">
@@ -190,9 +193,16 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
         </div>
     </div>
-    <%= link_to "マイページへ", user_path(current_user.id) %>
 <% end %>
+
+<div class="back">
+  <%= link_to "マイページへ", user_path(current_user.id) %>
+</div>
+
+<footer-3>
+  <small>© 2023/2/23 manamori</small>
+</footer-3>

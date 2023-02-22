@@ -7,23 +7,25 @@
 
     <body>
         <header>
-            <h1 class="headline">
-            <a>なかまはずれ</a>
-            </h1>
-            <h4>ここでは、なかまはずれを見つけるクイズにチャレンジできるよ！</h4>
-            <h4>１つだけ種るいがちがうものがあるから見つけてね。</4>
-            <h6>参考:<%= link_to '幼女の論理クイズ', "https://sist8.com/category/logical" %></h6>
+          <div class="header-text">
+            <div class="header-title">
+              <a>なかまはずれ</a>
+            </div>
+          </div>
         </header>
     </body>
+    <h3>ここでは、なかまはずれを見つけるクイズにチャレンジできるよ！</h3>
+    <h3>１つだけ種るいがちがうものがあるから見つけてね。</3>
+    <h6>参考:<%= link_to '幼女の論理クイズ', "https://sist8.com/category/logical" %></h6></br>
 
 <%= form_for(@nakama, class: 'form-horizontal', role: 'form') do |f| %>
     <div class="container-sindan">
         <div class="row">
             <div class="col-12">
-                <p>問題1</p>
+                <h4>問題1</h4>
                 <p>なかまはずれは左から何番目の図形でしょう？</p>
                 <p>画像の中から、なかまはずれを1つだけ見つけてね</p>
-                <img src="<%= asset_path('nakama1.jpeg') %>"/>
+                <img src='<%= asset_path('nakama1.jpeg') %>'width="30%"/>
             </div>
 
             <div class="form_item">
@@ -37,13 +39,13 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題2</p>
+                <h4>問題2</h4>
                 <p>なかまはずれは左から何番目の図形でしょう？</p>
                 <p>なかまはずれを1つだけ見つけてね</p>
-                <img src="<%= asset_path ('nakama2.jpeg') %>"/>
+                <img src='<%= asset_path ('nakama2.jpeg') %>'width="30%"/>
             </div>
 
             <div class="form_item">
@@ -57,13 +59,13 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題3</p>
+                <h4>問題3</h4>
                 <p>なかまはずれは左から何番目の図形でしょう？</p>
                 <p>なかまはずれを1つだけ見つけてね</p>
-                <img src="<%= asset_path ('nakama3.jpeg') %>"/>
+                <img src='<%= asset_path ('nakama3.jpeg') %>'width="30%"/>
             </div>
 
             <div class="form_item">
@@ -77,14 +79,14 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題4</p>
-                <p>なかまはずれはどれでしょう？</p>
+                <h4>問題4</h4>
+                <p>なかまはずれは左から何番目の図形でしょう？</p>
                 <p>なかまはずれを1つだけ見つけてね</p>
-                <img src="<%= asset_path ('nakama4.jpeg') %>"/>
-            </div>
+                <img src='<%= asset_path ('nakama4.jpeg') %>'width="30%"/>
+            </div></br>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解4 %>
@@ -101,35 +103,35 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題5</p>
+                <h4>問題5</h4>
                 <p>なかまはずれはどれでしょう？</p>
-                <p>なかまはずれを1つだけ見つけてね</p>
-                <p>バスケットボール, はい球, レスリング, たっ球</p>
+                <p>なかまはずれを1つだけ見つけてね</p></br>
+                <p>バスケットボール, はい球, レスリング, たっ球</p></br>
             </div>
 
             <div class="form_item">
             <%= f.radio_button :question, :不正解5 %>
             <label class="form_item_label" for="user_favorite_food_id">バスケットボール</label>
             <%= f.radio_button :question, :不正解5 %>
-            <label class="form_item_label" for="user_favorite_food_id">排球</label>
+            <label class="form_item_label" for="user_favorite_food_id">はい球</label>
             <%= f.radio_button :question, :正解5 %>
             <label class="form_item_label" for="user_favorite_food_id">レスリング</label>
             <%= f.radio_button :question, :不正解5 %>
-            <label class="form_item_label" for="user_favorite_food_id">卓球</label>
+            <label class="form_item_label" for="user_favorite_food_id">たっ球</label>
             </div>
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題6</p>
+                <h4>問題6</h4>
                 <p>なかまはずれはどれでしょう？</p>
-                <p>なかまはずれを1つだけ見つけてね</p>
-                <p>ヒイラギ, ひまわり, ユリ, バラ</p>
+                <p>なかまはずれを1つだけ見つけてね</p></br>
+                <p>ヒイラギ, ひまわり, ユリ, バラ</p></br>
             </div>
 
             <div class="form_item">
@@ -145,13 +147,13 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                 <p>問題7</p>
+                 <h4>問題7</h4>
                  <p>なかまはずれはどれでしょう？</p>
-                 <p>なかまはずれを1つだけ見つけてね</p>
-                 <p>自動車, 飛行機, トラッカー, バス</p>
+                 <p>なかまはずれを1つだけ見つけてね</p></br>
+                 <p>自動車, 飛行機, トラッカー, バス</p></br>
             </div>
 
             <div class="form_item">
@@ -167,13 +169,13 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題8</p>
+                <h4>問題8</h4>
                 <p>なかまはずれはどれでしょう？</p>
-                <p>なかまはずれを1つだけ見つけてね</p>
-                <p>東京ディズニーランド, 東京タワー, 東京駅, 東京六本木ヒルズ</p>
+                <p>なかまはずれを1つだけ見つけてね</p></br>
+                <p>東京ディズニーランド, 東京タワー, 東京駅, 東京六本木ヒルズ</p></br>
                 <p>ヒント：場所に注目してみよう！</p>
             </div>
 
@@ -190,13 +192,13 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題9</p>
+                <h4>問題9</h4>
                 <p>なかまはずれはどれでしょう？</p>
-                <p>なかまはずれを1つだけ見つけてね</p>
-                <p>たこやき, うどん, パンケーキ, おもち, クレープ</p>
+                <p>なかまはずれを1つだけ見つけてね</p></br>
+                <p>たこやき, うどん, パンケーキ, おもち, クレープ</p></br>
                 <p>ヒント：材料に注目してみよう！</p>
             </div>
 
@@ -215,14 +217,14 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題10</p>
+                <h4>問題10</h4>
                 <p>なかまはずれは左から何番目の図形でしょう？</p>
                 <p>なかまはずれを1つだけ見つけてね</p>
                 <p>ヒント：1つ1つ図形を整理してみよう！</p>
-                <img src="<%= asset_path('nakama10.jpeg') %>"/>
+                <img src='<%= asset_path('nakama10.jpeg') %>'width="40%"/>
             </div>
 
             <div class="form_item">
@@ -240,14 +242,16 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
         </div>
     </div>
-
-<h3>なかまはずれを見つけるクイズを最後まで解いてくれてありがとう！</h3>
-<h3>頭をたくさん使ったから、つかれたね~</h3>
-<h3>お休みしたら、マイページに行って他の問題にも挑戦してみてね</h3>
-
-<%= link_to "マイページへ", user_path(current_user.id) %>
 <% end %>
+
+<div class="back">
+  <%= link_to "マイページへ", user_path(current_user.id) %>
+</div>
+
+<footer-4>
+  <small>© 2023/2/23 manamori</small>
+</footer-4>

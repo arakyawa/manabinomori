@@ -1,34 +1,48 @@
-<h2>とうろく画面</h2>
+<header>
+  <div class="header-text">
+    <div class="header-title">
+      <p>とうろく画面</p>
+    </div>
+  </div>
+</header>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "users/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true %>
+      <%= f.label :お名前 %><br />
+      <%= f.text_field :name, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :メールアドレス %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :パスワード %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>最低 <%= @minimum_password_length %> 文字で入力してね</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :もう一度パスワードを入力してね %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <div class="button_solid004">
+      <a href="#"><%= f.submit "とうろく" %></a>
+    </div>
   </div>
 <% end %>
 
-<%= render "users/shared/links" %>
+<div class="link">
+  <%= link_to "ログイン画面へ", :controller => "sessions", :action => "new" %>
+</div>
+
+  <footer-1>
+  <small>© 2023/2/23 manamori</small>
+</footer-1>

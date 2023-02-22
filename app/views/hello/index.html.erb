@@ -7,36 +7,40 @@
   </head>
 
  <body>
-   <header class="header-content">
-     <h1 class="header-title">まなびのもり</h1>
+   <header>
+    <div class="header-text">
+      <div class="header-title">
+        <p>まなびのもり</p>
+      </div>
+    </div>
    </header>
 
     <main>
       <div class="main">
         <div class="main-text">
-        <p>ここでは、クイズを通してあたまの体そうをすることができるよ</br>
+        <p>ここでは、クイズを通してあたまの体そうをすることができるよ！</br>
         </br>
         大人になったらゲームを作成したいと考えている、</br>
         パソコンを使う学習が苦手だと感じている人は</br>
-        さっそくやってみよう</br></p>
+        さっそくやってみよう！</br></p>
         </div>
 
        <div class="main-app">
-         <p>↓はじめてクイズをやる人は下をクリック↓</p>
+         <p>↓はじめてクイズをする人は下をクリック↓</p>
           <div class="main-content"> 
-           <%= link_to "とうろく", new_user_registration_path %>
+              <%= link_to "とうろく", new_user_registration_path %>
           </div>
          <p>↓クイズをする人は下をクリック↓</p>
           <div class="main-context">
-           <%= link_to "ログイン", user_session_path %>
+              <%= link_to "ログイン", user_session_path %>
           </div>
 
        </div>
       </div>
     </main>
 
-    <footer>
-      <small>© 2023/2/21 manamori</small>
-    </footer>
+    <footer-1>
+      <small>© 2023/2/23 manamori</small>
+    </footer-1>
   </body>
 </html>

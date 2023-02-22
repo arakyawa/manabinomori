@@ -1,15 +1,41 @@
-<h1><%= @user.name %>のへや</h1>
-<p>プロフィール : <%= @user.profile %></p>
+<!DOCTYPE html>
+<html lang="ja">
+  <header>
+    <div class="header-text">
+      <div class="header-title">
+        <meta charset="utf-8" />
+        <p><%= @user.name %>のへや</p>
+        <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+      </div>
+    </div>
+  </header>
 
-<h2>どのクイズをやるか選んでね</h2>
-<%= link_to "数字・計算", :controller => "calculations", :action => "new" %>
-<%= link_to "キーボード・タイピング", :controller => "keys", :action => "new" %>
-<%= link_to "なかまはずれ", :controller => "nakamas", :action => "new" %>
-<%= link_to "道順", :controller => "roads", :action => "new" %>
-<%= link_to "頭をきたえるクイズ", :controller => "nazos", :action => "new" %>
+  <div class="prof">
+    <div class="prof-box">ひとこと</div>
+     <p><%= @user.profile %></p>
+  </div>
 
-<% if current_user.id == @user.id %>
-  <%= link_to "マイページのへんしゅうする", edit_user_registration_path %>
-<% end %>
+<h2>どのクイズをやるか選んでね!</h2>
+<div class="quiz">
+  <p> <%= link_to "数字・計算", :controller => "calculations", :action => "new" %></br>
+  <%= link_to "キーボード・タイピング", :controller => "keys", :action => "new" %></br>
+  <%= link_to "なかまはずれ", :controller => "nakamas", :action => "new" %></br>
+  <%= link_to "道順", :controller => "roads", :action => "new" %></br>
+  <%= link_to "頭をきたえるクイズ", :controller => "nazos", :action => "new" %></br></p>
+</div>
 
-<%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+<div class="link">
+  <% if current_user.id == @user.id %>
+    <%= link_to "プロフィールのへんしゅうする", edit_user_registration_path %>
+  <% end %>
+</div>
+
+<div class=actions-1>
+  <div class="button_solid003">
+    <a href="#"><p><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></p></a>
+  </div>
+</div>
+
+<footer-1>
+  <small>© 2023/2/23 manamori</small>
+</footer-1>

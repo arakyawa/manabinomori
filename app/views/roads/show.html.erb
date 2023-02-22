@@ -1,5 +1,11 @@
 <div class="intoro">
-<h2>道順</h2>
+  <header>
+    <div class="header-text">
+      <div class="header-title">
+        <h2>道順</h2>
+      </div>
+    </div>
+  </header>
 </div>
 <div class="tweet-container">
 <div class="tweet">
@@ -25,13 +31,13 @@
     <h1>不正解</h1>
     <p>ざんねん！</p>
 
-    <% elsif @road.question == "不正解5" %>
-    <h1>不正解</h1>
-    <p>ざんねん！</p>
-
     <% end %>
 
     <%= link_to "戻る", :controller => "roads", :action => "new" %>
     <%= link_to "マイページへ", user_path(current_user.id) %>
 
 </div>
+
+<footer-1>
+  <small>© 2023/2/23 manamori</small>
+</footer-1>

@@ -7,19 +7,21 @@
 
     <body>
         <header>
-            <h1 class="headline">
-            <a>頭をきたえるクイズ</a>
-            </h1>
-            <h4>ここでは頭を使うクイズを解くとこができるよ。文章をよく読んで問題にチャレンジしてみよう！</h4>
-            <h6>参考:<%= link_to '幼女の論理クイズ', "https://sist8.com/category/logical" %></h6>
-        </header>
+          <div class="header-text">
+            <div class="header-title">
+              <a>頭をきたえるクイズ</a>
+            </div>
+          </div>
+       </header>
     </body>
+    <h3>ここでは頭を使うクイズを解くとこができるよ。文章をよく読んで問題にチャレンジしてみよう！</h3>
+    <h6>参考:<%= link_to '幼女の論理クイズ', "https://sist8.com/category/logical" %></h6></br>
 
 <%= form_for(@nazo, class: 'form-horizontal', role: 'form') do |f| %>
     <div class="container-sindan">
         <div class="row">
             <div class="col-12">
-                <p>問題1</p>
+                <h4>問題1</h4>
                 <p>ここは、ある村の話です。</p>
                 <p>1人の小学生の前に3人村人がいます。</p>
                 <p>1人は天使、1人はあくま、1人は人間です。</p>
@@ -42,10 +44,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題2</p>
+                <h4>問題2</h4>
                 <p>ボールペンと消しゴムの値段は合わせて110円。</p>
                 <p>ボールペンは消しゴムより100円高い。</p>
                 <p>では、消しゴムの値段は?</p>
@@ -62,10 +64,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題3</p>
+                <h4>問題3</h4>
                 <p>AくんとBくんが100メートルでかけっこをします。</p>
                 <p>1回目のかけっこではAくんが勝利しました。</p>
                 <p>Aくんがゴールした時、Bくんは90メートルの所を走っていました。</p>
@@ -85,10 +87,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題4</p>
+                <h4>問題4</h4>
                 <p>ある女の子は深さ30メートルの井戸に落ちてしまいました。</p>
                 <p>彼女は1時間ごとに3メートル登りますが、その直後に2メートルずり落ちてしまいます。</p>
                 <p>女の子が井戸から脱出するには何時間かかる？</p>
@@ -107,10 +109,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題5</p>
+                <h4>問題5</h4>
                 <p>歩いて横断するのに6日かかる砂漠があります。</p>
                 <p>1人の男性はこの砂漠の横断に挑戦します。</p>
                 <p>彼はスタート時に荷物持ち(=荷物を持ってくれる人)を連れて砂漠に行きます。</p>
@@ -132,10 +134,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題6 </p>
+                <h4>問題6 </h4>
                 <p>おととい、Aちゃんは5歳だった。</p>
                 <p>来年の誕生日には8歳になるそうだよ。</p>
                 <p>さて、Aちゃんの誕生日はいつでしょう?</p>
@@ -152,10 +154,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題7</p>
+                <h4>問題7</h4>
                 <p>A子とB子がじゃんけんで10回勝負をしました。</p>
                 <p>A子は グー:3回, チョキ:6回, パー:1回出し、</p>
                 <p>B子は グー:2回, チョキ:6回, パー:1回出しました。</p>
@@ -175,10 +177,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題8</p>
+                <h4>問題8</h4>
                 <p>きれい好きなA子はせいけつなシャツを毎日着るために、</p>
                 <p>1日ごとにきれいなシャツに着替えます。</p>
                 <p>洗たくがめんどうくさいので、A子は毎週日曜日にクリーニング店へ行って</p>
@@ -197,10 +199,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題9</p>
+                <h4>問題9</h4>
                 <p>目の前に川があります。</p>
                 <p>川のこちら側にはボートが４つあります。</p>
                 <p>ボートは川を渡るのにそれぞれ1分,2分,4分,8分かかる。</p>
@@ -221,10 +223,10 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
             <div class="col-12">
-                <p>問題10 </p>
+                <h4>問題10 </h4>
                 <p>1.この中にうその文章が少なくとも1つある</p>
                 <p>2.この中にうその文章が少なくとも2つある</p>
                 <p>3.この中にうその文章が少なくとも3つある</p>
@@ -252,14 +254,17 @@
 
             <div class="sindanbotan">
             <%= f.submit "決定" %>
-            </div>
+            </div></br>
 
         </div>
     </div>
             
-<h3>頭をきたえるを最後まで解いてくれてありがとう！</h3>
-<h3>頭をたくさん使ったから、つかれたね~</h3>
-<h3>お休みしたら、マイページに行って他の問題にも挑戦してみてね</h3>
-
-<%= link_to "マイページへ", user_path(current_user.id) %>
 <% end %>
+
+<div class="back">
+  <%= link_to "マイページへ", user_path(current_user.id) %>
+</div>
+
+<footer-6>
+  <small>© 2023/2/23 manamori</small>
+</footer-6>

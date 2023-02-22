@@ -1,5 +1,11 @@
 <div class="intoro">
-<h2>数字・計算</h2>
+  <header>
+    <div class="header-text">
+      <div class="header-title">
+        <p>数字・計算</p>
+      </div>
+    </div>
+  </header>
 </div>
 <div class="tweet-container">
 <div class="tweet">
@@ -11,7 +17,9 @@
     <h1>不正解</h1>
     <p>ざんねん！</p>
     <p>もう一度、落ち着いて計算してみよう！</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/m5zWD0b6Qtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="movie">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/m5zWD0b6Qtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 
     <% elsif @calculation.question == "不正解2" %>
     <h1>不正解</h1>
@@ -107,7 +115,11 @@
 
     <% end %>
 
-    <%= link_to "戻る", :controller => "calculations", :action => "new" %>
+    </br>
+    <%= link_to "戻る", :controller => "calculations", :action => "new" %></br>
     <%= link_to "マイページへ", user_path(current_user.id) %>
 
 </div>
+<footer-1>
+  <small>© 2023/2/23 manamori</small>
+</footer-1>

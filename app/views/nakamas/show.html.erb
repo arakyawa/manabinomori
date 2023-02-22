@@ -1,5 +1,11 @@
 <div class="intoro">
-<h2>頭をきたえるクイズ</h2>
+  <header>
+    <div class="header-text">
+      <div class="header-title">
+        <p>なかまはずれ</p>
+      </div>
+    </div>
+  </header>
 </div>
 <div class="tweet-container">
 <div class="tweet">
@@ -42,7 +48,7 @@
 
     <% elsif @nakama.question == "正解5" %>
     <h1>正解</h1>
-    <p>やったね正解! 次の問題に挑戦してみよう！</p>
+    <p>やったね正解! 次の問題に挑戦してみよう！</p></br>
     <p>植物にくわしくなりたい人は、下の動画を見てみてね！</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YN6QH9cEuB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -50,48 +56,48 @@
     <h1>不正解</h1>
     <p>ざんねん！</p>
 
-    <p>1つだけお花じゃないものがあるよ！</p>
+    <p>1つだけお花じゃないものがあるよ！</p></br>
     <p>植物にくわしくなりたい人は、下の動画を見てみてね！</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YN6QH9cEuB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <% elsif @nakama.question == "正解7" %>
     <h1>正解</h1>
     <p>やったね正解! 次の問題に挑戦してみよう！</p>
-    <p>乗り物が気になる人は下の動画も見てみてね！</p>
+    <p>乗り物が気になる人は下の動画も見てみてね！</p></br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/nZhWSW4_eiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <% elsif @nakama.question == "不正解7" %>
     <h1>不正解</h1>
     <p>ざんねん！</p>
-    <p>全部乗り物だけど、1つだけちがう場所で動いてるね～</p>
+    <p>全部乗り物だけど、1つだけちがう場所で動いてるね～</p></br>
 
     <p>乗り物が気になる人は下の動画も見てみてね！</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/nZhWSW4_eiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <% elsif @nakama.question == "正解8" %>
     <h1>正解</h1>
-    <p>やったね正解! 次の問題に挑戦してみよう！</p>
+    <p>やったね正解! 次の問題に挑戦してみよう！</p></br>
     <p>ついでに日本地図もふく習しちゃおう！</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cVssGYwBSjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <% elsif @nakama.question == "不正解8" %>
     <h1>不正解</h1>
     <p>ざんねん！</p>
-    <p>1つだけ東京にないものがあるよ、わかるかな？</p>
+    <p>1つだけ東京にないものがあるよ、わかるかな？</p></br>
 
     <p>ついでに日本地図もふく習しちゃおう！</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cVssGYwBSjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <% elsif @nakama.question == "正解9" %>
     <h1>正解</h1>
-    <p>やったね正解! 次の問題に挑戦してみよう！</p>
+    <p>やったね正解! 次の問題に挑戦してみよう！</p><br>
     <p>アメリカでは動画のような料理バトル番組があるみたい！気になる人はチェック</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/KfnpOChruMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <% elsif @nakama.question == "不正解9" %>
     <h1>不正解</h1>
     <p>ざんねん！</p>
-    <p>1つだけお米が材料になっているものがあるよ！</p>
+    <p>1つだけお米が材料になっているものがあるよ！</p></br>
 
     <p>アメリカでは動画のような料理バトル番組があるみたい！気になる人はチェック</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/KfnpOChruMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -116,7 +122,12 @@
 
     <% end %>
 
-    <%= link_to "戻る", :controller => "nakamas", :action => "new" %>
+    </br>
+    <%= link_to "戻る", :controller => "nakamas", :action => "new" %></br>
     <%= link_to "マイページへ", user_path(current_user.id) %>
 
 </div>
+
+<footer-1>
+  <small>© 2023/2/23 manamori</small>
+</footer-1>
